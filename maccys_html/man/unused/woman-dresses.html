@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache -->
+
+<html>
+<head>
+	<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+
+	<title>Woman Dresses</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+	
+</head>
+
+<body>
+<!-- myModal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body row span7">
+    
+
+    	<div id="shipping-note">
+        	
+            <div id="closeit"><img src="images/shipping/close.png" id="closebt" data-dismiss="modal"  /></div>
+            <div id="shipping-msg">
+            
+            	<h1>Shipping policy</h1>
+                
+
+                <p>
+                
+                <strong>International Shipping Rate</strong><br />
+				International shipping rates are calculated based on a number of factors including desired service level (standard/express), number of items you're purchasing, the weight of the item, and the destination country/region. International shipping will be calculated during checkout by FiftyOne.
+                </p>
+					
+                <p>
+                <strong>International Shipping Delivery Estimates</strong><br />
+                Most in-stock items generally arrive within 4-13 business days after your order is received. ("Business days" means Monday-Friday, excluding holidays.) Since delivery timeframes vary depending on destination, a more accurate estimate will be provided during checkout. Please note: Although we try our best to deliver your items during the estimated timeframe, delivery dates are not guaranteed.
+				</p>
+                
+                <p>
+                <strong>International Shipping Product Restrictions</strong><br />
+                Unfortunately, we don't currently support the sale of gift cards to international customers or the redemption of gift cards for orders shipped internationally. Due to shipping regulations, the following product categories sold on the macys.com U.S. site are not available on the international site: electronics, beauty and fragrances. If, for some reason, there are any other items that cannot be exported from the U.S. and/or imported into your destination country selection, FiftyOne will notify you during the checkout process.
+                </p>
+
+            
+            </div>
+
+    </div>
+    
+    
+  </div>
+</div>
+<!-- end myModal -->
+
+<div class="pop-up" id="pop-up">
+	<div class="container ">
+		<div class="splash-logo"><a href="index.html"><img src="images/splash/splash-logo.jpg" width="272" height="72" alt=""/></a></div>
+		
+		<div class="country-title"> 
+			<div class="splash-img">
+				<img src="images/splash/s-title.jpg" width="100%" height="100%" alt=""/>
+			</div>
+			<div class="splash-img2">
+				<img src="images/splash/splash-mobile.jpg" width="100%" height="100%" alt=""/>
+			</div>
+		
+			<div class="countr-hldr">
+				<div class="c-text">Canada</div>
+				<div class="country-flag"><img src="images/splash/canada.jpg" width="68" height="52" alt=""/></div>
+				
+				<select name="" id="">
+					<option value="">Choose Country</option>
+					<option value="">Country 1</option>
+					<option value="">Country 2</option>
+					<option value="">Country 3</option>
+					<option value="">Country 4</option>
+					<option value="">Country 5</option>
+					<option value="">Country 6</option>
+				</select>
+				
+			</div> 
+			
+			<div class="countr-hldr">
+				<div class="c-text">Australia</div>
+				<div class="country-flag"><img src="images/splash/australia.jpg" width="68" height="52" alt=""/></div>
+				
+				<select name="" id="">
+					<option value="">Choose Country</option>
+					<option value="">Country 1</option>
+					<option value="">Country 2</option>
+					<option value="">Country 3</option>
+					<option value="">Country 4</option>
+					<option value="">Country 5</option>
+					<option value="">Country 6</option>
+				</select>
+				<div class="clr"></div>
+			</div> 
+			
+			<div class="clr"></div>
+		</div>
+		</div>
+</div>
+
+<div id="main-container">
+	<div id="header-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="span4 margin ">
+					
+						<ul class="top-menu">
+							<li><a href="#">stores</a></li>
+							<li><a href="#">customer service</a></li>
+							<li><a href="#" id="ship">shipping to <img src="images/page_template/flag.png" alt=""/></a></li>
+						</ul>
+					
+				</div>
+				
+				<div class="span5 " style="float:right;">
+					<div class="top-location">
+						<div class="spec-width">
+								<div class="shopping-from">
+									You are shopping from<br> 
+									<span class="bold">Calgary, Alberta.</span>
+								</div>
+								<div class="change-province">
+									<select>
+										<option>Change Province</option>
+										<option>option 1</option>
+										<option>option 2</option>
+									</select>
+								</div>
+								<div class="change-city">
+									<select>
+										<option>Change City</option>
+										<option>option 1</option>
+										<option>option 2</option>
+									</select>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+					
+					<div class="span3 logo">					
+							<a href="index.html"><img src="images/page_template/logo.png" width="271" height="80" alt=""/></a>	
+					</div><!-- Logo -->
+					
+					<div class="span4 margin search">
+						<div class="search-hldr">
+							<input type="text" placeholder="Search or enter web ID">
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+					
+					<div class="span2 fr margin bag">
+						<div class="bag-count">
+							my bag (0)
+						</div>
+						<div class="bag-image">
+							<img src="images/page_template/cart.png">
+						</div>
+					</div>
+					
+				</div>
+			<div class="clr"></div>		
+
+			<div class="mobile-menu columns"> 
+			  <ul class="idTabs"> 
+				<li><a class="idTab1 selected" href="#idTab1">Tab 1</a></li> 
+				<li><a class="idTab2" href="#idTab2">Tab 2</a></li> 
+				<li><a href="#idTab3" class="idTab3">Tab 3</a></li> 
+			  </ul> 
+			  <div id="idTab1" style="display: block;">
+				<nav role="navigation">
+					<ul>
+						<li><a class="first-child-a" href="bed-and-bath.html">BED &amp; BATH</a></li>
+						<li><a href="woman.html">WOMAN</a></li>
+						<li><a href="man.html">MEN</a></li>
+						<li><a class="last-child-a" href="#">SHOES</a></li>
+					</ul>
+				</nav>
+			  
+			  </div> 
+			  
+			  <div id="idTab2" style="display: none;">
+				<input type="text" placeholder="Search or enter web ID">
+				<button type="submit">Submit</button>
+			  </div> 
+			  
+
+				  <div id="idTab3" style="display: none;">
+					<div class="shopping-from">
+						You are shopping from <span class="bold">Calgary, Alberta.</span>
+					</div>
+						<div class="change-province">
+							<select>
+								<option>Change Province</option>
+								<option>option 1</option>
+								<option>option 2</option>
+							</select>
+						</div>
+						<div class="change-city">
+							<select>
+								<option>Change City</option>
+								<option>option 1</option>
+								<option>option 2</option>
+							</select>
+						</div>
+					</div> 
+			</div>
+		</div>	
+	</div><!-- END HEADER -->
+	
+	<div id="main-wrapper">
+		<div class="menu-bg">
+			<div class="container">
+				<nav class="navigation" role="navigation">
+						<ul>
+							<li class="first-child-li"><a class="first-child-a" href="bed-and-bath.html">BED &amp; BATH</a></li>
+							<li><a href="woman.html" class="active-hover">WOMAN</a></li>
+							<li><a href="man.html" >MEN</a></li>
+							<li class="last-child-li" ><a class="last-child-a" href="shoes.html">SHOES</a></li>
+						</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="clr"></div>
+		
+		<div class="breadcrumbs-container">
+				<div class="container">
+					<div class="span3 breabcrumbs">home > bed & bath</div>
+					
+					<div class="span5 sub-menu">
+						<ul class="bottom-nav">
+							<li class="gift-"><a href="#">The giftguide</a></li>
+							<li><a href="#">deals &amp; promotions</a></li>
+							<li><a class="bold" href="#">wedding registry</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+		
+		<div class="container">
+			<div class="contentarea">
+			
+				<div class="left-nav">
+					<h4>
+						Dresses
+						<div class="clr"></div>
+						<a href="#"><img src="images/woman/back-to.png" width="105" height="9" alt=""/></a>
+					</h4>
+					
+					<ul class="item-list">
+						<li><a href="#">Activewear</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a class="item-active"  href="#">Dresses </a></li>
+						<li><a href="#">Jackets & Blazers</a></li>
+						<li><a href="#">Jeans</a></li>
+						<li><a href="#">Jumpsuits & Rompers</a></li>
+						<li><a href="#">Lingerie</a></li>
+						<li><a href="#">Pajamas and Robes</a></li>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Shorts</a></li>
+						<li><a href="#">Skirts</a></li>
+						<li><a href="#">Suits & Suit Separates</a></li>
+						<li><a href="#">Sweaters</a></li>
+						<li><a href="#">Swim</a></li>
+						<li><a href="#">Tops</a></li>
+					</ul>
+					
+					<div class="cat-title">Top Brands</div>					
+					<ul class="item-list">
+						<li><a href="#">Lauren Ralph Lauren</a></li>
+						<li><a href="#">INC</a></li>
+						<li><a href="#">Michael Kors </a></li>
+						<li><a href="#">Jones New York</a></li>
+						<li><a href="#">Tommy Hilfiger</a></li>
+					</ul>
+					<br/><br/>
+					
+					<div class="cat-title">Women's Plus Sizes <a href="#">+</a></div>
+					
+				</div>
+				
+				<div class="right-content ">
+					<h3>Prom Dresses - Calgary</h3>
+					<p>When you're shopping for prom dresses in Calgary, make Macy's your first choice. Whether you're looking for everyday essentials or your next fashion statement, we have a vast selection of the latest styles from the leading labels. Don't lose your cool in stores, malls or outlets: shop online stress-free at Macy's.
+
+					</p>
+					<div class="clr"></div>
+					<div class="wd-title-bg"><a href="#"><img src="images/woman/see.png " width="158" height="17" alt=""/></a></div>
+					
+					<div class="product-dress">					
+						<ul>	
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress1.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless Rhinestone Sweetheart Evening Gown</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="product-detail.html">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress2.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Adrianna Papell Dress, Sleeveless Draped Sequin Faux-Wrap</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress3.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless One Shoulder Beaded Draped
+								</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress4.jpg" width="136" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Jump Juniors Dress, Sleeveless High-Low Illusion</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress5.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless Rhinestone Sweetheart Evening Gown</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress6.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Adrianna Papell Dress, Sleeveless Draped Sequin Faux-Wrap</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress7.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless One Shoulder Beaded Draped
+								</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress8.jpg" width="136" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Jump Juniors Dress, Sleeveless High-Low Illusion</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress1.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless Rhinestone Sweetheart Evening Gown</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress2.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Adrianna Papell Dress, Sleeveless Draped Sequin Faux-Wrap</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress3.jpg" width="102" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Xscape Dress, Sleeveless One Shoulder Beaded Draped
+								</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							<li>
+								<div class="dress-img">
+									<img src="images/woman/dress4.jpg" width="136" height="237" alt=""/></div>
+								<div class="dress-desc">
+								Jump Juniors Dress, Sleeveless High-Low Illusion</div>
+								<br/>
+								<div class="dress-desc"><strong>Reg. CAD XXX.XX</strong></div>
+								<div class="dress-desc" style="color:#cc3333;"><strong>Sale. CAD XXX.XX</strong></div>
+								<div class="see-all"><a href="#">see details</a></div>
+							</li>
+							
+						</ul>
+					</div>
+					
+					<div class="clr"></div>
+					<br/>
+					<div class="wd-title-bg"><a href="#"><img src="images/woman/see-prom.png " width="246" height="12" alt=""/></a></div>
+					
+				</div>
+				<div class="clr"></div>
+				
+				
+				
+			</div>
+				
+					<div class="clr"></div>
+					<br/>
+					<div class="sixteen columns fpo">
+						<img src="images/page_template/fpo.jpg">
+					</div><!-- banner -->
+					
+		</div><!-- container -->
+		<div class="clr"></div>
+	</div>
+</div>
+
+<div class="clr"></div>
+<div id="footer-wrapper">
+	<div class="container w-desktop" >
+		 <div class="span1 widget" style="margin:0 40px 0 0;">
+			<h6>Products</h6>
+				<ul>
+					<li><a href="#">bed &amp; bath</a></li>
+					<li><a href="#">women</a></li>
+					<li><a href="#">men</a></li>
+					<li><a href="#">shoes</a></li>
+					<li><a href="#">buy online</a></li>
+				</ul>
+			</div>
+			
+		 <div class="span2 widget" style="margin:0 20px 0 0;">
+			<h6>CUSTOMER SERVICE</h6>
+				<ul>
+					<li><a href="#">order tracking</a></li>
+					<li><a href="#myModal" role="button" data-toggle="modal">shipping & delivery</a></li>
+					<li><a href="#">returns</a></li>
+					<li><a href="#">frequently asked questions</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#" id="ship2">shipping to <img src="images/page_template/flag.png" alt=""> go to US. site</a></li>
+				</ul>
+			</div>
+
+		 <div class="span2 widget" style="margin:0 0 0 0;">
+			<h6>OUR STORES</h6>
+				<ul>
+					<li><a href="#">find a store</a></li>
+					<li><a href="#">visitor services</a></li>
+					<li><a href="#">visitors shopping pass</a></li>
+					<li><a href="#">tell us what you think</a></li>
+				</ul>
+			</div>
+			
+		 <div class="span2 widget" style="margin:0 14px 0 0;">
+		 
+				<h6>MACY'S INC.</h6>
+				<ul>
+					<li><a href="#">macysJOBS</a></li>
+					<li><a href="#">press room</a></li>
+					<li><a href="#">investors</a></li>
+					<li><a href="#">tell us what you think</a></li>
+				</ul>
+				
+				<h6>STAY CONNECTED</h6>
+				<ul>
+					<li><a href="#"><img src="images/page_template/social.png" width="141" height="23" alt=""/></a></li>
+					<li><a href="#"><img src="images/page_template/email.png" width="22" height="15" alt=""/> sign up for email</a></li>
+				</ul>
+			</div>
+			
+		 <div class="span3 widget" style="margin:0 0 0 0;">
+		 
+				<h6>WHAT'S HAPPENING AT MACY'S</h6>
+				<ul>
+					<li><a href="#"><img src="images/page_template/happening-macys.jpg" width="209" height="61"	alt=""/></a></li>
+					<li>
+						<div class="macys-links">
+								<a href="#"><img src="images/page_template/new-leaf.jpg"></a>
+								<a href="#"><img src="images/page_template/backstage.jpg"></a>
+								<a href="#"><img src="images/page_template/give-back.jpg"></a>
+							</div>
+					</li>
+				</ul>
+			</div>
+		   <div class="clr"></div>
+	</div><!-- container desktop-->
+	
+	<div class="container " >
+		<div class="w-mobile">
+			<h3>SHIPPING <img src="images/page_template/flag.png" width="59" height="36" alt=""/></h3>
+			<div class="fl" style="margin-left:20px; margin-top:25px;"><img src="images/page_template/share.png" width="175" height="50" alt=""/></div>
+			<div class="fl" style="margin-left:20px; margin-top:25px; "><img src="images/page_template/social-widget.png" width="253" height="48" alt=""/></div>
+			
+			<div class="clr"></div>
+			<div class="left-widget">
+				<ul>
+					<li><a href="#">Legal Notice</a></li>
+					<li><a href="#">Privacy Practises   </a></li>
+				</ul>
+			</div>
+			<div class="right-widget ">
+				<ul>
+					<li><a href="#"> Pricing Policy</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		
+	</div>
+
+</div>
+<div class="container">
+			<div class="sixteen columns copyright">
+				<p>&copy; 2013 macys.com is a registered trademark. All rights reserved.</p>
+				<p class="foot-text">Macys.com, Inc., 685 Market Street, San Francisco, CA 94105. Macy's Credit and Customer Service, PO Box 8113, Mason, Ohio 45040. Request our corporate name &amp; address by email.</p>
+				<p class="copyright-links">
+					<a href="#">Legal Notice</a>
+					<a href="#">Pricing Policy</a>
+					<a href="#">Privacy Practices</a>
+					<a href="#">Product Recalls</a>
+					<a href="#">Sitemap</a>
+				</p>
+			</div>
+		</div>
+<!-- Use this when you upload your file -->
+	<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/lib/jquery1.7.1jquery.min.js"></script>
+	<script type="text/javascript" src="js/clearfield.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+	<script type="text/javascript">
+	$('#ship').click(function() {
+		$('#pop-up').fadeIn();
+		})
+		
+		$('#ship2').click(function() {
+		$('#pop-up').fadeIn();
+		})
+		
+			
+		
+	$('#main-wrapper').click(function() {
+		$('#pop-up').fadeOut();
+		})
+	</script>
+</body>
+</html>

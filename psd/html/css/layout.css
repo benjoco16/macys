@@ -1,0 +1,235 @@
+/*
+* Based on Dave Gamache Skeleton Framework
+* Skeleton Framework V.1.2
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+* {
+  -webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+     -moz-box-sizing: border-box; /* Firefox 1+ */
+          box-sizing: border-box; /* Chrome, IE 8+, Opera, Safari 5.1 */
+}
+
+h2 { color: #cc0000; font-size: 36px; }
+
+
+/* #Page Styles
+================================================== */
+.top-header { background: url(../images/top-header-shadow.png) no-repeat bottom center #f2f2f2; width: 100%; height: 41px; }
+.top-nav ul { margin: 0; padding: 10px 0; }
+.top-nav ul li { margin: 0; float: left; }
+.top-nav ul li a { font-size: 12px; text-decoration: none; padding-right: 16px; }
+
+.top-location { float: right; padding: 5px 0; }
+.shopping-from { float: left; font-size: 11px; line-height: normal; text-align: right; padding-right: 10px; }
+.change-province { float: left; padding-right: 10px; }
+.change-city { float: left; }
+.change-province select, .change-city select { width: 100px; margin: 0; padding: 4px 3px; width: 130px; }
+
+.mid-header { padding: 15px 0; }
+.logo h1 a { background: url(../images/logo.png) no-repeat; width: 271px; height: 80px; display: block; text-indent: -9999px; }
+.search { position: relative; display: block; margin-top: 24px; }
+.search input{ border-radius: 0 0 0 0; font-size: 16px; height: 37px; margin: 0; padding: 8px 10px; width: 400px; }
+.search button{ background: url(../images/search.png) no-repeat; width: 35px; height: 35px; text-indent: -9999px; font-size: 0; line-height: 0; margin:0; position: absolute; border: none; border-radius: 0 0 0 0; padding: 0; top: 1px; right: 61px; }
+.bag-count { float: left; font-size: 14px; font-weight: bold; padding: 28px 10px; }
+.bag-image { float: left; }
+
+.navigation { background: #000000; width: 100%; height: 37px; }
+.navigation nav ul { margin: 0; }
+.navigation nav ul li { text-align: center; margin: 0; float: left; width: 290px; }
+.navigation nav ul li.first-child-li { text-align: left; width: 180px; }
+.navigation nav ul li.last-child-li { text-align: right; width: 180px; }
+.navigation nav ul li a { color: #ffffff; display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 21px;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 105px; }
+.navigation nav ul li a.first-child-a { margin: 0; float: left; }
+.navigation nav ul li a.last-child-a { margin: 0; float: right; }
+.navigation nav ul li a:hover { background: none repeat scroll 0 0 #ffffff; color: #000000; }
+
+.breadcrumbs-container { background: url(../images/breadcrumbs-bg.png) no-repeat bottom center #ffffff; width: 100%; height: 36px; }
+.breabcrumbs { font-size: 12px; padding: 9px 0; }
+ul.bottom-nav { margin: 0; float: right; }
+ul.bottom-nav li { float: left; margin: 0; padding: 7px 13px; }
+ul.bottom-nav li a { display: block; font-size: 13px; text-decoration: none; }
+ul.bottom-nav li.gift-guide a { background: url(../images/gift-guide.jpg) no-repeat; width: 89px; height: 21px; text-indent: -9999px; }
+
+.contentarea { border-right: 1px solid #cccccc; border-left: 1px solid #cccccc; border-bottom: 1px solid #cccccc; }
+
+.banner {  }
+.banner-content { float: left; padding: 25px 20px 10px; width: 630px; }
+.banner-content p { font-size: 16px; }
+.banner-image { float: left; }
+.banner-image img { display: block; }
+
+.icon-menu { background: #000000; }
+.icons-container { padding: 0 58px; }
+.bed-bath, .women, .men, .shoes { float: left; padding: 15px 35px; }
+.icon-menu img { display: block; }
+
+.fpo { padding: 15px 0 0 0; }
+.fpo img { display: block; width: 100%; }
+
+.footer-container { background: #ebebeb; margin-top: 15px; }
+.footer-shadow-top { background: url(../images/footer-shadow-top.png) no-repeat bottom center #ebebeb; width: 100%; height: 4px; }
+.footer-shadow-bottom { background: url(../images/footer-shadow-bottom.png) no-repeat bottom center #ebebeb; width: 100%; height: 4px; }
+
+footer { padding: 10px 0; }
+footer h6 { text-transform: uppercase; font-size: 12px; }
+footer ul { margin: 0; }
+footer ul li { margin: 0; }
+footer ul li a { font-size: 11px; text-decoration: none; }
+section.products { float: left; width: 135px; }
+section.customer-service { float: left; width: 210px; }
+section.our-stories { float: left; width: 180px; }
+section.macys-inc { float: left; width: 170px; }
+section.happening-at-macys { float: left; }
+
+ul.social { margin: 0; padding-top: 10px; }
+ul.social li { margin: 0; float: left; padding-right: 5px; }
+ul.social li a { display: block; text-indent: -9999px; background: url(../images/social.png) no-repeat; width: 23px; height: 23px; }
+ul.social li.twitter a { background-position: -30px 0; }
+ul.social li.pinterest a { background-position: -59px 0; }
+ul.social li.youtube a { background-position: -89px 0; }
+ul.social li.m-blog a { background-position: -118px 0; }
+
+.newsletter { padding: 5px 0 0 0; }
+.newsletter img { vertical-align: middle; }
+.newsletter a { font-size: 11px; text-decoration: none; vertical-align: middle; }
+.macys-happening { padding: 10px 0 0 0; }
+.macys-links img { margin-right: 10px; }
+.copyright { padding: 10px 0; text-align: center; }
+.copyright p { font-size: 11px; margin: 0; }
+.copyright-links a { padding: 5px; }
+
+/* Mobile Nav
+================================================== */
+
+.mobile-header{margin:20px auto 0;display:none}
+.mobile-menu{width:100%;margin:-27px auto 0!important}
+#idTab1,#idTab2,#idTab3{clear:both;background:#f2f2f2;overflow:hidden;position:relative;}
+#idTab2,#idTab3{padding:10px}
+.idTabs{float:right;margin:0}
+.idTabs li {float:left;margin:0 0 0 5px}
+.idTabs li  a{display:block;text-indent:-99999px;background:url(../images/mobile-nav.png) no-repeat; width:40px;height:30px;}
+
+.idTabs li  a.idTab1{background-position:0 0}
+.idTabs li  a.idTab2{background-position:-42px 0}
+.idTabs li  a.idTab3{background-position:-85px 0}
+#idTab1 ul{margin:0}
+#idTab1 ul li:first-child{border:none}
+#idTab1 ul li{border-top:1px solid #c3c3c3;margin:0}
+#idTab1 ul li a{display:block;font-weight:bold;text-decoration:none;padding:10px;color:#000}
+#idTab1 ul li a:hover{color:#e21a2c}
+
+#idTab2 input { border-radius: 0 0 0 0; font-size: 16px; height: 37px; margin: 0; padding: 8px 10px; width: 460px; }
+#idTab2 button { background: url(../images/search.png) no-repeat; width: 35px; height: 35px; text-indent: -9999px; font-size: 0; line-height: 0; margin:0; position: absolute; border: none; border-radius: 0 0 0 0; padding: 0; top: 11px; right: 11px; }
+
+#idTab3 .shopping-from{float:none;text-align:left;margin:0 0 10px}
+
+/* CSS3 Transition - Apply comment if not necessary
+================================================== */
+	.container, img {
+		transition:all .1s linear; 
+		-o-transition:all .1s linear; 
+		-moz-transition:all .1s linear; 
+		-webkit-transition:all .1s linear;
+	}
+
+
+/* #Media Queries
+================================================== */
+
+		/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.mobile-header {display:none}
+	.logo {width:275px!important}
+	.search {width:260px!important}
+	.search button{right:0}
+	.bag {width:173px!important}
+	.navigation nav ul li{width:193px}
+	.banner-content{width:452px}
+	.banner-content h2{font-size:30px}
+	.icons-container{padding:0}
+	.bed-bath, .women, .men, .shoes{padding:15px 25.7px}
+	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+	.mobile-header .logo{float:none}
+	.logo h1 a{background-size:150px 46px;width:150px;height:46px}
+	.mobile-header {display:block}
+	header{display:none}
+	.banner-content{width:300px}
+	.banner-content h2{font-size:20px}
+	.banner-content p, .banner-image img{display:none}
+	.contentarea{border:none}
+	.icons-container{padding:0}
+	.bed-bath, .women, .men, .shoes{padding: 20px 7px}
+	.bed-bath,.men{border-right:1px solid #161616}
+	.bed-bath, .women{border-bottom:1px solid #161616}
+	
+	
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.change-province select, .change-city select{width:225px}
+	.logo h1 a{background-size:150px 46px;width:150px;height:46px}
+	.mobile-header {display:block}
+	.mobile-header .logo{float:none}
+	header{display:none}
+	.banner-content{width:480px}
+	.banner-content h2{font-size:33px}
+	.banner-content p, .banner-image img{display:none}
+	.contentarea{border:none}
+	.icons-container{padding:0}
+	.bed-bath, .women, .men, .shoes{padding: 20px 52px}
+	.bed-bath,.men{border-right:1px solid #161616}
+	.bed-bath, .women{border-bottom:1px solid #161616}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Misc
+================================================== */
+.bold { font-weight: bold; }
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
